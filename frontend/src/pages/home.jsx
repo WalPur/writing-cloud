@@ -1,4 +1,5 @@
 import Welcome from "./components/welcome";
+import ForYou from "./components/foryou";
 import React from "react";
 
 class Home extends React.Component {
@@ -29,13 +30,14 @@ class Home extends React.Component {
     if (!DataisLoaded)
       return (
         <div>
-          <h1> Pleses wait some time.... </h1>{" "}
+          <h1> Пожалуйста подождите немного.... </h1>{" "}
         </div>
       );
 
     return (
       <div className="App">
         <Welcome username={items} />
+        <ForYou />
       </div>
     );
   }

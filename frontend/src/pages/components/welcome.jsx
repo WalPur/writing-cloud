@@ -7,9 +7,9 @@ import "./welcome.css";
 function getWelcomeText(username) {
   console.log(username);
   if (username === undefined) {
-    return <h2>Добро пожаловать</h2>;
+    return <h2 className="welcome-text">Добро пожаловать</h2>;
   } else {
-    return <h2>Добрый вечер, {username.username}</h2>;
+    return <h2 className="welcome-text">Добрый вечер, {username.username}</h2>;
   }
 }
 

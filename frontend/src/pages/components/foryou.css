@@ -1,0 +1,25 @@
+.foryou-frame {
+    padding: 35px 0;
+}
+#foryour-card {
+    display: flex;
+    justify-content: end;
+    max-width: 500px;
+    color: white;
+    background: url("../../../public/images/cover.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    border-radius: 14px;
+}
+#foryou-card-body {
+    height: min-content;
+    backdrop-filter: blur(10px);
+    height: 160px;
+}
+.foryou-cards-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}

@@ -2,6 +2,9 @@
     background: linear-gradient(180deg, #353535 0%, #664B4B 100%);
     padding: 40px 0;
 }
+.welcome-text {
+    color: white;
+}
 .welcome-news {
     display: flex;
     justify-content: space-between;
