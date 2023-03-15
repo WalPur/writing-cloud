@@ -1,0 +1,49 @@
+.welcome-frame {
+    background: linear-gradient(180deg, #353535 0%, #664B4B 100%);
+    padding: 40px 0;
+}
+.welcome-news {
+    display: flex;
+    justify-content: space-between;
+}
+.welcome-headtext {
+    color: white
+}
+#card {
+    flex-direction: row;
+    max-width: 500px;
+    color: white;
+    background: url("../../../public/images/cover.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    border-radius: 14px;
+}
+#card-img {
+    max-width: 250px;
+}
+#welcome-card-body {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#card-button {
+    background-color: #7A5B5B;   
+    width: 100%;
+}
+.cards-row {
+    display: flex;
+}
+
+.welcome-updates {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.welcome-update-headtext {
+    text-align: right;
+}
