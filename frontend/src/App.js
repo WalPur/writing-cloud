@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/login";
+import Home from "./pages/home";
+import Layout from "./pages/layout";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function setToken(userToken) {
+  sessionStorage.setItem("token", JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem("token");
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token;
+}
 
 function App() {
+  // const [token, setToken] = useState();
+  const token = getToken();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home token={token} />} />
+          <Route path="login" element={<Login setToken={setToken} />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
