@@ -18,6 +18,7 @@ function getToken() {
 function App() {
   // const [token, setToken] = useState();
   const token = getToken();
+  // console.log(token);
   return (
     <BrowserRouter>
       <Routes>
