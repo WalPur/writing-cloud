@@ -8,3 +8,29 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+footer {
+    background-color: #353535;
+    padding: 40px 0;
+}
+.footer-top-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: white
+}
+.footer-top-element {
+    margin-bottom: 15px;
+}
+.footer-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.35);
+}
+.socials {
+    display: flex;
+    gap: 15px;
+}
