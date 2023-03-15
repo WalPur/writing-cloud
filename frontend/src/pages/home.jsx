@@ -1,5 +1,6 @@
 import Welcome from "./components/welcome";
 import ForYou from "./components/foryou";
+import BestOfMonth from "./components/bestofmonth";
 import React from "react";
 
 class Home extends React.Component {
@@ -38,6 +39,7 @@ class Home extends React.Component {
       <div className="App">
         <Welcome username={items} />
         <ForYou />
+        <BestOfMonth />
       </div>
     );
   }

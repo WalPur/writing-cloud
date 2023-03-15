@@ -1,0 +1,40 @@
+.best-frame {
+  background: #353535;
+  padding: 40px 0;
+}
+.best-headtext {
+  color: white;
+}
+.best-card {
+  display: flex;
+}
+.best-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.best-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+
+  color: #ffffff;
+}
+.best-author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.best-desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
