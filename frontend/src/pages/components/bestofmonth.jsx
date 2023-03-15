@@ -84,7 +84,6 @@ export default function BestOfMonth() {
             </div>
           </div>
         </Carousel>
-        ;
       </Container>
     </div>
   );

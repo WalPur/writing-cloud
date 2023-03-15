@@ -1,0 +1,21 @@
+.thematic-frame {
+  background: #f3f1ed;
+  padding: 35px 0;
+}
+.thematic-header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
+
+  color: #545454;
+}
+.thematic-row {
+  display: flex;
+  gap: 18px;
+  overflow-x: scroll;
+}
+.thematic-image {
+  object-fit: scale-down;
+}

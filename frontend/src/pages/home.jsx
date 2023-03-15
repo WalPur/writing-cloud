@@ -2,6 +2,7 @@ import Welcome from "./components/welcome";
 import ForYou from "./components/foryou";
 import BestOfMonth from "./components/bestofmonth";
 import React from "react";
+import Thematic from "./components/thematic";
 
 class Home extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class Home extends React.Component {
         <Welcome username={items} />
         <ForYou />
         <BestOfMonth />
+        <Thematic />
       </div>
     );
   }
