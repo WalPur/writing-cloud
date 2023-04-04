@@ -155,7 +155,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://89.108.115.136",
-    "http://writing-cloud.pi-21.ru/"
+    "http://writing-cloud.pi-21.ru"
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
