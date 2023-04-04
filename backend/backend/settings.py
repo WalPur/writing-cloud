@@ -158,4 +158,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://writing-cloud.pi-21.ru"
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://writing-cloud.pi-21.ru']
+
 CORS_ORIGIN_ALLOW_ALL = True
