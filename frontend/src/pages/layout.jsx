@@ -42,7 +42,7 @@ const Layout = () => {
               </Nav>
             </Navbar.Collapse>
           </div>
-          <Nav.Link as={Link} to="/login" id="header-link">
+          <Nav.Link as={Link} to="/" id="header-link">
             Login
           </Nav.Link>
         </Container>

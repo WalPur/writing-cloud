@@ -13,12 +13,12 @@ function getWelcomeText(username) {
   }
 }
 
-export default function Welcome(username) {
+export default function Welcome() {
   //   const welcomeText = getWelcomeText(username);
   return (
     <div className="welcome-frame">
       <Container>
-        {getWelcomeText(username.username)}
+        <h2 className="welcome-text">Добро пожаловать</h2>;
         <div className="welcome-news">
           <div className="welcome-continue">
             <h3 className="welcome-headtext">Продолжить чтение</h3>
