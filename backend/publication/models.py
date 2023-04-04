@@ -16,3 +16,6 @@ class Publication(models.Model):
     is_adult_only = models.BooleanField(
         verbose_name="Только для взрослых?", default=False
     )
+
+    def __str__(self):
+        return "Публикация {self.name}"
