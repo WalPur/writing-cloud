@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-7dtp_j8a7#l91oal33tg2z*(f%72(e1(gl9y!6%1l_$s*3n-t7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get("DEBUG", default=True),)
 
-ALLOWED_HOSTS = ["89.108.115.136", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["89.108.115.136", "localhost", "127.0.0.1", "writing-cloud.pi-21.ru"]
 
 
 # Application definition
@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ru-ru"
 
 TIME_ZONE = "UTC"
 
@@ -155,6 +155,9 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://89.108.115.136",
+    "http://writing-cloud.pi-21.ru"
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://writing-cloud.pi-21.ru']
 
 CORS_ORIGIN_ALLOW_ALL = True

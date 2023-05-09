@@ -13,3 +13,6 @@ class Commantary(models.Model):
     text = models.TextField(verbose_name="Комментарий")
     time_created = models.DateTimeField(auto_now=True)
     is_review = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "Комментарий на пост {self.publication.name}"
