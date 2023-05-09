@@ -1,8 +1,10 @@
+import Header from "./widgets/header/header";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world</h1>
-    </>
+    <div className="mx-auto min-h-screen  bg-slate-500">
+      <Header />
+    </div>
   );
 }
 
