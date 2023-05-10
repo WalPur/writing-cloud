@@ -10,7 +10,7 @@ function Header() {
           <HeaderLogo />
         </div>
         <NavigationLinks />
-        <PersonalNavigation bellStatus={false} />
+        <PersonalNavigation bellStatus={true} />
       </div>
     </div>
   );

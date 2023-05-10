@@ -1,6 +1,6 @@
 import NotificationBell from "../shared/NotificationBell";
 import AddButton from "../shared/AddButton";
-import ProfilePic from "./ProfilePic";
+import ProfilePic from "../shared/ProfilePic";
 
 function PersonalNavigation({ bellStatus }) {
   return (
