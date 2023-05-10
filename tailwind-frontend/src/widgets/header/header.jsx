@@ -1,18 +1,16 @@
-import NavigationTextLink from "../../shared/NavTextLink";
+import NavigationLinks from "../../entities/NavigationLinks";
+import PersonalNavigation from "../../entities/PersonalNavigation";
+import HeaderLogo from "../../shared/HeaderLogo";
 
 function Header() {
   return (
-    <div className="h-20 bg-top-color">
-      <div className="flex h-full max-w-screen-lg justify-between">
-        <div className="w-2/12">logo</div>
-        <div className="flex w-6/12 justify-between">
-          <NavigationTextLink text="sample" link="#" isActive={false} />
-          <NavigationTextLink text="sample" link="#" isActive={false} />
-          <NavigationTextLink text="sample" link="#" isActive={false} />
-          <NavigationTextLink text="sample" link="#" isActive={false} />
-          <NavigationTextLink text="sample" link="#" isActive={false} />
+    <div className="h-20 bg-main-300">
+      <div className="mx-auto flex h-full max-w-screen-lg justify-between">
+        <div className="flex w-3/12 items-center">
+          <HeaderLogo />
         </div>
-        <div className="w-2/12">logo</div>
+        <NavigationLinks />
+        <PersonalNavigation bellStatus={false} />
       </div>
     </div>
   );

@@ -3,7 +3,8 @@ function NavigationTextLink({ text, link, isActive }) {
     <a
       href={link}
       className={
-        "font-bold text-white" + isActive ? "opacity-100" : "opacity-60"
+        "font-main-200 text-base font-semibold text-white hover:opacity-100 " +
+        (isActive ? "opacity-100" : "opacity-60")
       }
     >
       {text}

@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#7A5B5B",
-        "top-color": "#353535",
+        main: {
+          100: "#6E656B",
+          200: "#7A5B5B",
+          300: "#353535",
+        },
       },
       fontFamily: {
         main: ["Montserrat"],
